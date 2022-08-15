@@ -1,8 +1,7 @@
-
-const fs = require('fs');
+const chalk = require('chalk');
 const getNotes = require('./notes');
 
 const msg = getNotes();
 
-// fs.appendFileSync('notes.txt',' Appending (2)');
 console.log(msg);
+console.log(chalk.green('Success')); 
